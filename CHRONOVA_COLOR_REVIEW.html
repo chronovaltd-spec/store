@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chronova BD — Colour Direction Review</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #25334a;
+            --muted: #73787d;
+            --line: #ded9cf;
+            --paper: #f4f1eb;
+            --card: #fffdf8;
+            --burgundy: #762c3b;
+            --gold: #b5965a;
+            --navy: #1d304b
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: #eeece7;
+            color: var(--ink);
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        header {
+            padding: 30px max(22px, calc((100vw - 1320px)/2));
+            background: #fffdf9;
+            border-bottom: 1px solid #dedbd4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #1d304b
+        }
+
+        .brandmark {
+            font-family: Georgia, serif;
+            font-size: 34px;
+            line-height: 1;
+            color: #762c3b
+        }
+
+        .brandname {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px
+        }
+
+        .brandname small {
+            display: block;
+            font-size: 8px;
+            letter-spacing: 3px;
+            margin-top: 4px;
+            color: #7d8081
+        }
+
+        .draft {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            color: #776b59;
+            border: 1px solid #ddd2be;
+            padding: 9px 12px;
+            background: #f9f5ed
+        }
+
+        .intro {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 42px 24px 28px
+        }
+
+        .kicker {
+            font-size: 10px;
+            letter-spacing: 2.2px;
+            color: #762c3b;
+            font-weight: bold
+        }
+
+        .intro h1 {
+            font: normal clamp(34px, 5vw, 58px)/1.05 Georgia, serif;
+            letter-spacing: -1.3px;
+            margin: 13px 0 12px;
+            color: #1d304b
+        }
+
+        .intro p {
+            font-size: 15px;
+            line-height: 1.7;
+            max-width: 690px;
+            margin: 0;
+            color: #66707b
+        }
+
+        .notice {
+            max-width: 1320px;
+            margin: 0 auto 24px;
+            padding: 0 24px
+        }
+
+        .notice div {
+            padding: 13px 16px;
+            background: #fff8e7;
+            border: 1px solid #e5d6b8;
+            color: #655741;
+            font-size: 13px;
+            line-height: 1.55
+        }
+
+        .boards {
+            max-width: 1320px;
+            padding: 0 24px 50px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px
+        }
+
+        .board {
+            border: 1px solid #d7d3cb;
+            background: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 12px 34px #202a3612
+        }
+
+        .board-head {
+            padding: 19px 22px 16px;
+            border-bottom: 1px solid #e8e5df;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px
+        }
+
+        .board-head h2 {
+            font: normal 24px Georgia, serif;
+            margin: 0;
+            color: #26354a
+        }
+
+        .board-head span {
+            font-size: 9px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            color: #807a70
+        }
+
+        .mini-site {
+            min-height: 365px;
+            padding: 0 22px 24px;
+            background: var(--bg);
+            color: var(--text)
+        }
+
+        .mini-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 17px 0;
+            border-bottom: 1px solid var(--rule);
+            font-size: 9px;
+            letter-spacing: 1.1px
+        }
+
+        .mini-logo {
+            font: 20px Georgia, serif;
+            color: var(--accent)
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 15px;
+            color: var(--muted)
+        }
+
+        .bag {
+            border: 1px solid var(--rule);
+            padding: 7px 9px;
+            color: var(--text)
+        }
+
+        .hero {
+            padding: 31px 0 20px;
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 15px;
+            align-items: center
+        }
+
+        .hero-label {
+            font-size: 8px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: var(--accent)
+        }
+
+        .hero h3 {
+            font: normal clamp(25px, 3vw, 38px)/1.05 Georgia, serif;
+            margin: 10px 0;
+            color: var(--text);
+            letter-spacing: -.5px
+        }
+
+        .hero p {
+            font-size: 11px;
+            line-height: 1.55;
+            color: var(--muted);
+            max-width: 270px;
+            margin: 0 0 14px
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--buttontext);
+            padding: 10px 14px;
+            font-size: 9px;
+            font-weight: bold;
+            letter-spacing: .8px;
+            border: 0
+        }
+
+        .photo-slot {
+            height: 156px;
+            display: grid;
+            place-items: center;
+            background: var(--slot);
+            border: 1px dashed var(--rule);
+            text-align: center;
+            color: var(--muted);
+            font-size: 10px;
+            line-height: 1.5;
+            padding: 18px
+        }
+
+        .slot-mark {
+            display: block;
+            font: 36px Georgia, serif;
+            color: var(--accent);
+            opacity: .7
+        }
+
+        .collection {
+            border-top: 1px solid var(--rule);
+            padding-top: 15px
+        }
+
+        .collection-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 10px
+        }
+
+        .collection h4 {
+            font: normal 19px Georgia, serif;
+            margin: 0;
+            color: var(--text)
+        }
+
+        .collection small {
+            font-size: 8px;
+            color: var(--muted);
+            letter-spacing: .8px
+        }
+
+        .tiles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 9px
+        }
+
+        .tile {
+            background: var(--tile);
+            border: 1px solid var(--rule);
+            padding: 8px
+        }
+
+        .tile-art {
+            height: 48px;
+            background: var(--slot);
+            display: grid;
+            place-items: center;
+            color: var(--accent);
+            font: 23px Georgia, serif
+        }
+
+        .tile strong {
+            display: block;
+            font: 12px Georgia, serif;
+            margin-top: 7px
+        }
+
+        .tile small {
+            display: block;
+            font-size: 8px;
+            color: var(--muted);
+            margin-top: 4px
+        }
+
+        .swatches {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 16px 22px 20px;
+            background: #fff;
+            border-top: 1px solid #e8e5df
+        }
+
+        .swatch {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 9px;
+            color: #555
+        }
+
+        .dot {
+            width: 19px;
+            height: 19px;
+            border: 1px solid #0002;
+            border-radius: 50%
+        }
+
+        .desc {
+            padding: 0 22px 17px;
+            font-size: 11px;
+            line-height: 1.6;
+            color: #6c7075
+        }
+
+        .foot {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px 36px;
+            color: #777;
+            font-size: 11px;
+            line-height: 1.6
+        }
+
+        @media(max-width:800px) {
+            .boards {
+                grid-template-columns: 1fr
+            }
+
+            .intro {
+                padding-top: 30px
+            }
+
+            .mini-nav {
+                font-size: 8px
+            }
+
+            .navlinks {
+                gap: 8px
+            }
+
+            .mini-site {
+                padding-left: 16px;
+                padding-right: 16px
+            }
+
+            .board-head {
+                padding-left: 16px;
+                padding-right: 16px
+            }
+        }
+
+        @media(max-width:440px) {
+            header {
+                align-items: flex-start;
+                flex-direction: column
+            }
+
+            .hero {
+                grid-template-columns: 1fr
+            }
+
+            .photo-slot {
+                height: 110px
+            }
+
+            .navlinks span:nth-child(2) {
+                display: none
+            }
+
+            .mini-nav {
+                gap: 8px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand"><span class="brandmark">C.</span><span
+                class="brandname">CHRONOVA<small>BANGLADESH</small></span></div><span class="draft">COLOUR STUDY · NOT
+            APPLIED</span>
+    </header>
+    <section class="intro"><span class="kicker">DESIGN REVIEW · OPTION A / OPTION B</span>
+        <h1>Two directions, one considered feel.</h1>
+        <p>Both studies keep the current clean editorial layout and premium watch-store tone. Only the colour grading
+            changes. No product photography is used in this review; the framed areas are reserved for verified Chronova
+            photos.</p>
+    </section>
+    <div class="notice">
+        <div><strong>Review first:</strong> These colours are previews only. The live storefront has not been
+            recoloured. Choose a direction or request shade adjustments before anything is applied.</div>
+    </div>
+    <main class="boards">
+        <section class="board"
+            style="--bg:#f1ecdf;--tile:#fffdf7;--slot:#e8e0d0;--text:#25334a;--muted:#77766f;--rule:#d9d0bf;--accent:#762d3c;--buttontext:#fffaf1">
+            <div class="board-head">
+                <h2>A · Heirloom Ivory</h2><span>WARM · REFINED · CLASSIC</span>
+            </div>
+            <div class="mini-site">
+                <div class="mini-nav"><span class="mini-logo">C. &nbsp; CHRONOVA</span><span
+                        class="navlinks"><span>SHOP</span><span>OUR STORY</span><span>CONTACT</span></span><span
+                        class="bag">BAG · 0</span></div>
+                <div class="hero">
+                    <div><span class="hero-label">TIME, WITH INTENTION</span>
+                        <h3>Made for the<br>moments that matter.</h3>
+                        <p>Considered timepieces for workdays, weekends and everything between.</p><span
+                            class="button">EXPLORE THE COLLECTION&nbsp; →</span>
+                    </div>
+                    <div class="photo-slot"><span><b class="slot-mark">◇</b>Verified Chronova product photo<br>will be
+                            placed here</span></div>
+                </div>
+                <div class="collection">
+                    <div class="collection-top">
+                        <h4>The collection</h4><small>VIEW ALL&nbsp; →</small>
+                    </div>
+                    <div class="tiles">
+                        <div class="tile">
+                            <div class="tile-art">◌</div><strong>Watch name</strong><small>BDT price · confirmed</small>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-art">◌</div><strong>Watch name</strong><small>BDT price · confirmed</small>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-art">◌</div><strong>Watch name</strong><small>BDT price · confirmed</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swatches"><span class="swatch"><i class="dot" style="background:#f1ecdf"></i>Soft
+                    cream</span><span class="swatch"><i class="dot" style="background:#fffdf7"></i>Warm
+                    white</span><span class="swatch"><i class="dot" style="background:#b5965a"></i>Muted
+                    gold</span><span class="swatch"><i class="dot" style="background:#762d3c"></i>Burgundy</span><span
+                    class="swatch"><i class="dot" style="background:#25334a"></i>Ink navy</span></div>
+            <p class="desc">Cream-led pages with burgundy actions, gentle gold details and navy typography. Warmest and
+                most classic of the two.</p>
+        </section>
+        <section class="board"
+            style="--bg:#182941;--tile:#fffdf8;--slot:#243a55;--text:#f7f3e9;--muted:#c5c7c7;--rule:#42536a;--accent:#bd9b5e;--buttontext:#182941">
+            <div class="board-head">
+                <h2>B · Midnight Atelier</h2><span>DEEP · MODERN · LUXE</span>
+            </div>
+            <div class="mini-site">
+                <div class="mini-nav"><span class="mini-logo">C. &nbsp; CHRONOVA</span><span
+                        class="navlinks"><span>SHOP</span><span>OUR STORY</span><span>CONTACT</span></span><span
+                        class="bag">BAG · 0</span></div>
+                <div class="hero">
+                    <div><span class="hero-label">TIME, WITH INTENTION</span>
+                        <h3>Made for the<br>moments that matter.</h3>
+                        <p>Considered timepieces for workdays, weekends and everything between.</p><span
+                            class="button">EXPLORE THE COLLECTION&nbsp; →</span>
+                    </div>
+                    <div class="photo-slot"><span><b class="slot-mark">◇</b>Verified Chronova product photo<br>will be
+                            placed here</span></div>
+                </div>
+                <div class="collection">
+                    <div class="collection-top">
+                        <h4>The collection</h4><small>VIEW ALL&nbsp; →</small>
+                    </div>
+                    <div class="tiles">
+                        <div class="tile">
+                            <div class="tile-art">◌</div><strong>Watch name</strong><small>BDT price · confirmed</small>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-art">◌</div><strong>Watch name</strong><small>BDT price · confirmed</small>
+                        </div>
+                        <div class="tile">
+                            <div class="tile-art">◌</div><strong>Watch name</strong><small>BDT price · confirmed</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swatches"><span class="swatch"><i class="dot" style="background:#182941"></i>Midnight
+                    navy</span><span class="swatch"><i class="dot" style="background:#f7f3e9"></i>Off-white</span><span
+                    class="swatch"><i class="dot" style="background:#bd9b5e"></i>Antique gold</span><span
+                    class="swatch"><i class="dot" style="background:#762d3c"></i>Burgundy accent</span><span
+                    class="swatch"><i class="dot" style="background:#fffdf8"></i>Ivory card</span></div>
+            <p class="desc">Navy-led hero and header with gold calls to action, warm ivory product cards and small
+                burgundy accents. More dramatic and contemporary.</p>
+        </section>
+    </main>
+    <p class="foot">These are colour and layout studies only—not final product claims. Product names, prices and photos
+        will remain unassigned until confirmed. The seven AI studio concepts are not used as merchandise photos.</p>
+</body>
+
+</html>

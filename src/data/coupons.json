@@ -1,0 +1,16 @@
+[
+  {
+    "code": "ROL676",
+    "type": "free_delivery",
+    "kind": "free_delivery",
+    "value": 0.0,
+    "minimumSubtotal": 1500.0,
+    "maximumDiscount": null,
+    "startsAt": "2026-10-20T17:04:00+00:00",
+    "endsAt": "2026-10-23T17:04:00+00:00",
+    "usageLimit": 1,
+    "usageCount": 0,
+    "terms": "",
+    "active": true
+  }
+]

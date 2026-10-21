@@ -1,0 +1,88 @@
+[
+  {
+    "id": "CP506",
+    "name": "OLEVS COUPLE WATCH",
+    "brand": "Chronova",
+    "category": "Couple",
+    "price": 1000.0,
+    "compareAt": 1250.0,
+    "badge": null,
+    "tone": "#000000",
+    "dial": "#000000",
+    "movement": "QUARTZ",
+    "case": "To be confirmed",
+    "strap": "STAINLESS STEEL",
+    "image": "/images/products/IMG-20260127-WA0000.jpg",
+    "images": [
+      "/images/products/IMG-20260127-WA0000.jpg"
+    ],
+    "premiumBoxes": [],
+    "description": "Celebrate your bond with this stunning OLEVS couple watch set, featuring matching designs for him and her. The luxurious silver and gold-tone stainless steel bracelets, elegant black dials, sparkling crystal markers, and classic Roman numerals create a sophisticated look for every occasion.",
+    "inStock": false,
+    "popupFeatured": false,
+    "previewOnly": false
+  },
+  {
+    "id": "HUB0067",
+    "name": "HUBLOT DUO",
+    "brand": "Chronova",
+    "category": "Classic",
+    "price": 1180.0,
+    "compareAt": 1450.0,
+    "badge": "FEATURED",
+    "tone": "#000000",
+    "dial": "#000000",
+    "movement": "QUARTZ",
+    "case": "NORMAL",
+    "strap": "STEEL",
+    "image": "/images/products/hublot_silver_hero.jpg",
+    "images": [
+      "/images/products/hublot_silver_hero.jpg",
+      "/images/products/45.jpeg",
+      "/images/products/2.jpeg"
+    ],
+    "premiumBoxes": [],
+    "description": "Faceted geometric bezel with exposed screws and a spider-web style skeleton/open-worked dial featuring the Hublot brand mark.\r\nStrap/Chain: Integrated stainless steel link bracelet.\r\nCOLOR: Grey",
+    "inStock": true,
+    "popupFeatured": true,
+    "previewOnly": false
+  },
+  {
+    "id": "ROL2229",
+    "name": "ROLEX YATCH MASTER",
+    "brand": "Chronova",
+    "category": "Everyday",
+    "price": 1500.0,
+    "compareAt": 1700.0,
+    "badge": "PRESTIGIOUS",
+    "tone": "#000000",
+    "dial": "#000000",
+    "movement": "QUARTZ",
+    "case": "To be confirmed",
+    "strap": "FIBER",
+    "image": "/images/products/watch_product_4x5_1.jpg",
+    "images": [
+      "/images/products/watch_product_4x5_1.jpg",
+      "/images/products/4.jpeg",
+      "/images/products/IMG_0866.jpeg",
+      "/images/products/IMG_0870.jpeg"
+    ],
+    "premiumBoxes": [
+      {
+        "id": "1",
+        "name": "ROLEX YATCH MASTER BOX",
+        "heading": "Horizon Vault",
+        "description": "Featuring a sleek matte-black carbon fiber exterior paired with ocean-blue Italian full-grain leather, this ultra-modern, lockable case includes a precision watch cushion and an integrated compartment for extra links and warranty cards.",
+        "price": 1100.0,
+        "images": [
+          "/images/premium-boxes/s-l1200.webp",
+          "/images/premium-boxes/s-l1200_1_75H9D2Z.webp"
+        ]
+      }
+    ],
+    "description": "Crafted for Excellence\r\nStriking Aesthetic: The high-contrast black dial features oversized Chromalight hour markers, casting a long-lasting luminescent glow that ensures perfect readability in low-light environments.\r\nSignature Bezel: The bidirectional rotatable bezel is equipped with a matte black Cerachrom insert in ceramic, sporting polished, raised numerals and graduations that catch the light with subtle brilliance.\r\nInnovative Oysterflex Bracelet: Engineered to offer the durability of a metal bracelet with the flexibility of a rubber strap, it utilizes a patented flexible metal blade\r\novermolded with high-performance elastomer for unparalleled wrist comfort.",
+    "inStock": true,
+    "popupFeatured": true,
+    "previewOnly": false
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "hero-1-choose-your",
+    "eyebrow": "DETAILS, NOT DISTRACTIONS",
+    "title": "Choose your",
+    "emphasis": "everyday.",
+    "body": "A fictional Chronova concept collection, shown here as a design preview.",
+    "caption": "Original, unbranded concept photography",
+    "imageCaption": "NORTHSTAR · CONCEPT PREVIEW",
+    "imageAlt": "Unbranded navy-dial stainless steel mesh watch on a warm stone background",
+    "src": "/images/banners/choose-your-1.jpg",
+    "primaryLabel": "Explore the collection",
+    "primaryHref": "/shop",
+    "secondaryLabel": "Our story",
+    "secondaryHref": "/about"
+  },
+  {
+    "id": "hero-2-time-made",
+    "eyebrow": "A CLASSIC, REIMAGINED",
+    "title": "Time, made",
+    "emphasis": "personal.",
+    "body": "Considered shapes and warm materials for the moments that make a day your own.",
+    "caption": "A fictional design study for Chronova BD",
+    "imageCaption": "MERIDIAN · CONCEPT PREVIEW",
+    "imageAlt": "Unbranded rectangular silver dress watch with an ivory dial and brown leather strap",
+    "src": "/images/banners/time-made-2.jpg",
+    "primaryLabel": "View the watches",
+    "primaryHref": "/shop",
+    "secondaryLabel": "Read our story",
+    "secondaryHref": "/about"
+  },
+  {
+    "id": "hero-3-keep-pace",
+    "eyebrow": "MADE TO MOVE",
+    "title": "Keep pace",
+    "emphasis": "with your day.",
+    "body": "An original sport-watch concept with a dark dial and quiet metallic details.",
+    "caption": "Generated concept imagery · not a final product photo",
+    "imageCaption": "SOLSTICE · CONCEPT PREVIEW",
+    "imageAlt": "Unbranded black chronograph-style sport watch with champagne-gold accents",
+    "src": "/images/banners/keep-pace-3.jpeg",
+    "primaryLabel": "Discover the collection",
+    "primaryHref": "/shop",
+    "secondaryLabel": "Get in touch",
+    "secondaryHref": "/contact"
+  }
+]
