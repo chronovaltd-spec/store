@@ -14,7 +14,7 @@ npm run dev
 ```
 
 Online orders and the contact form stay disabled until the EmailJS settings are filled in. Read [`EMAIL_SETUP.md`](./EMAIL_SETUP.md) for the short setup steps.
-
+Merge conflict fixed
 ## Email provider status
 
 EmailJS is the simple primary sender. If its request fails, the app can hand the message to the Cloudflare Pages Function at `/api/email-fallback`, which sends through Resend once configured. The function is included in `functions/api/email-fallback.js`; the Resend key must remain a Cloudflare server-side Secret, never a `VITE_` value. DNS verification, Cloudflare project secrets, rate limiting and a live delivery test are still required before enabling the fallback. Postmark is another transactional-email provider to consider.
