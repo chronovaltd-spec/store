@@ -74,8 +74,4 @@ export function trackMetaEvent(eventName, parameters = {}) {
   if (!ensurePixel()) return false;
   window.fbq('track', eventName, parameters);
   return true;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f011e1723f74507c4270f8cbecae7d2b5092fd31
