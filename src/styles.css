@@ -5,7 +5,7 @@
 @media(max-width:390px){.hero-actions{align-items:flex-start;flex-direction:column;gap:13px}.button{min-height:43px}.product-grid{gap:21px 8px}.product-name{font-size:14px}.add-round{width:27px;height:27px;flex-basis:27px}.product-reference{display:none}.header-actions{gap:0}.brand-word{font-size:9px}.header-bag{font-size:10px}.shop-controls select{max-width:110px;font-size:9px}.filter-toggle{font-size:9px;padding:0 6px}.checkout-top h1{font-size:33px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
-/* Approved palette A — Heirloom Ivory (warm cream, burgundy, muted gold, navy). */
+/* Approved palette A — Heirloom Ivory (warm cream, burgundy, muted gold, navy). Merge conflict*/
 body{background:var(--paper)}
 .announcement{background:var(--red)}
 .header{background:rgba(255,253,248,.94)}
@@ -358,4 +358,8 @@ img.watch-art{object-fit:contain;object-position:center}
 .marketing-consent-copy{max-width:570px}.marketing-consent-copy strong{font:500 18px var(--serif)}.marketing-consent-copy p{margin:5px 0 4px;color:#5e6873;font-size:12px;line-height:1.55}.marketing-consent-policy{font-size:11px;text-decoration:underline;text-underline-offset:3px;color:#7a2938}
 .marketing-consent-actions{display:flex;flex:0 0 auto;align-items:center;gap:8px}.marketing-consent-actions button{min-height:40px;padding:0 13px;border:1px solid var(--ink);font-size:11px;font-weight:650;cursor:pointer}.consent-reject{background:transparent;color:var(--ink)}.consent-accept{background:var(--ink);color:#fff}.marketing-consent-actions button:hover{filter:brightness(1.12)}
 .footer-cookie-settings{padding:0;border:0;background:none;color:inherit;font:inherit;font-size:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.footer-cookie-settings:hover{color:#8b2938}
+<<<<<<< HEAD
 @media(max-width:760px){.marketing-consent{bottom:74px;left:10px;right:10px;width:auto;display:block;padding:15px}.marketing-consent-copy strong{font-size:16px}.marketing-consent-copy p{font-size:11px}.marketing-consent-actions{margin-top:12px;display:grid;grid-template-columns:1fr 1fr}.marketing-consent-actions button{padding:0 8px;font-size:10px}.footer-cookie-settings{font-size:inherit}}
+=======
+@media(max-width:760px){.marketing-consent{bottom:74px;left:10px;right:10px;width:auto;display:block;padding:15px}.marketing-consent-copy strong{font-size:16px}.marketing-consent-copy p{font-size:11px}.marketing-consent-actions{margin-top:12px;display:grid;grid-template-columns:1fr 1fr}.marketing-consent-actions button{padding:0 8px;font-size:10px}.footer-cookie-settings{font-size:inherit}}
+>>>>>>> f011e1723f74507c4270f8cbecae7d2b5092fd31

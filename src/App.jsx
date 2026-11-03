@@ -88,6 +88,7 @@ function Header({mobileOpen,setMobileOpen,setSearchOpen}){
  const links=[['Shop','/shop'],['Our story','/about'],['Reviews','/reviews']];
  return <header className="header"><Link to="/" className="brandmark" aria-label="Chronova home"><img className="brand-symbol brand-logo-image" src="/chronova-mark.webp" alt=""/><span className="brand-word">CHRONOVA<small>TIME YOU CAN TRUST</small></span></Link><nav className="desktop-nav">{links.map(([t,to])=><NavLink key={to} to={to} className={({isActive})=>isActive?'active':''}>{t}</NavLink>)}</nav><div className="header-actions"><button className="icon-button" aria-label="Search" onClick={()=>setSearchOpen(true)}><Search size={19}/></button><Link className="icon-button wish-link" to="/wishlist" aria-label={`Wishlist ${wishlist.length}`}><Heart size={19}/>{wishlist.length>0&&<i/>}</Link><Link className="header-bag" to="/cart"><ShoppingBag size={17}/><span>Bag</span><span className="bag-count">{count}</span></Link><button className="menu-toggle" aria-label="Open menu" onClick={()=>setMobileOpen(!mobileOpen)}>{mobileOpen?<X/>:<Menu/>}</button></div>{mobileOpen&&<nav className="mobile-menu" aria-label="Mobile navigation">{[links[0],links[1],links[2],['Saved pieces','/wishlist']].map(([t,to])=><Link key={to} to={to} onClick={()=>setMobileOpen(false)}>{t}<ArrowUpRight size={15}/></Link>)}</nav>}</header>
 }
+//Git Merge conflict fix
 function toWhatsAppUrl(value){
  const raw=String(value||'').trim();
  if(!raw)return '';

@@ -18,7 +18,7 @@ export default function MarketingConsent() {
     setChoice(value);
     setSettingsOpen(false);
   };
-
+//Git merge
   if (choice !== null && !settingsOpen) return null;
 
   return createPortal(
