@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "code": "DIU10",
+    "type": "percent",
+    "kind": "percent",
+    "value": 10.0,
+    "minimumSubtotal": 0.0,
+    "maximumDiscount": null,
+    "startsAt": "2026-11-10T03:41:00+00:00",
+    "endsAt": "2026-12-02T15:41:00+00:00",
+    "usageLimit": 7,
+    "usageCount": 0,
+    "terms": "STUDYING IN DAFFODIL INTERNATIONAL UNIVERSITY",
+    "active": true
+  },
+  {
+    "code": "SEU10",
+    "type": "percent",
+    "kind": "percent",
+    "value": 10.0,
+    "minimumSubtotal": 1500.0,
+    "maximumDiscount": null,
+    "startsAt": "2026-11-09T03:39:00+00:00",
+    "endsAt": "2026-12-03T15:39:00+00:00",
+    "usageLimit": 7,
+    "usageCount": 0,
+    "terms": "STUDYING AT SOUTH EAST UNIVERSITY",
+    "active": true
+  }
+]
