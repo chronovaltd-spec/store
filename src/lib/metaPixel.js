@@ -1,6 +1,6 @@
 // Meta Pixel ID from the client's existing Chronova dataset.
 // Pixel IDs are public identifiers; never place a Conversions API token here.
-const META_PIXEL_ID = '1663526018819391';
+const META_PIXEL_ID = '2253099345268172';
 const CONSENT_KEY = 'chronova.marketing-consent.v1';
 const CONSENT_EVENT = 'chronova:consent-change';
 
