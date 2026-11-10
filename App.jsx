@@ -295,7 +295,7 @@ function Checkout(){
  const [form,setForm]=useState({name:'',email:'',whatsapp:'',address:'',area:'Dhaka',city:'Dhaka',postalCode:'',notes:'',paymentMethod:'Cash on delivery'});
  const subtotal=cart.reduce((sum,item)=>sum+item.price*item.quantity,0);
  const boxTotal=cart.reduce((sum,item)=>{const p=catalog.find(product=>product.id===item.id)||item;const box=p.premiumBoxes?.find(candidate=>String(candidate.id)===String(item.premiumBoxId));return sum+(box?Number(box.price)*Number(item.premiumBoxQuantity||0):0)},0);
- const deliveryFee=form.area==='Dhaka'?80:150;
+ const deliveryFee=form.area==='Dhaka'?80:130;
  const {discount,deliveryDiscount}=couponValue(appliedCoupon,subtotal,deliveryFee);
  const total=Math.max(0,subtotal+boxTotal+deliveryFee-discount-deliveryDiscount);
  const update=e=>setForm(current=>({...current,[e.target.name]:e.target.value}));
@@ -336,7 +336,7 @@ function Checkout(){
    <label className="span-two">Delivery notes <textarea name="notes" value={form.notes} onChange={update} placeholder="Landmark or a convenient delivery note (optional)" rows="3"/></label>
    <label className="span-two optional-email-field">Email address <span>(optional — for an order copy)</span><input type="email" name="email" autoComplete="email" value={form.email} onChange={update} placeholder="you@example.com"/></label>
   </div>
-  <div className="form-section-head section-gap"><span className="section-no">02</span><div><h2>Delivery &amp; payment</h2><p>Delivery is BDT 80 within Dhaka Division and BDT 150 elsewhere in Bangladesh.</p></div></div>
+  <div className="form-section-head section-gap"><span className="section-no">02</span><div><h2>Delivery &amp; payment</h2><p>Delivery is BDT 80 within Dhaka Division and BDT 130 elsewhere in Bangladesh.</p></div></div>
   <div className="choice-list payment-choice"><label className={form.paymentMethod==='Cash on delivery'?'choice selected':''}><input type="radio" name="paymentMethod" value="Cash on delivery" checked={form.paymentMethod==='Cash on delivery'} onChange={update}/><span><strong>Cash on delivery</strong><small>Pay when your order arrives</small></span><b>COD</b></label><label className={form.paymentMethod==='bKash manual'?'choice selected':''}><input type="radio" name="paymentMethod" value="bKash manual" checked={form.paymentMethod==='bKash manual'} onChange={update}/><span><strong>bKash — confirm with our team</strong><small>We’ll share verified payment instructions after confirming your order</small></span><b>bKash</b></label></div>
   <button className="button button-dark checkout-next" type="submit">Review your order <ArrowRight size={16}/></button>
  </form>:<div className="review-panel"><button className="back-button" onClick={()=>setStep(1)}><ArrowLeft size={15}/> Edit details</button>
