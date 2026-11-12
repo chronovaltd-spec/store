@@ -74,54 +74,6 @@
     "previewOnly": false
   },
   {
-    "id": "CP506",
-    "name": "OLEVS COUPLE WATCH",
-    "brand": "Chronova",
-    "category": "Couple",
-    "price": 1000.0,
-    "compareAt": 1250.0,
-    "badge": null,
-    "tone": "#000000",
-    "dial": "#000000",
-    "movement": "QUARTZ",
-    "case": "To be confirmed",
-    "strap": "STAINLESS STEEL",
-    "image": "/images/products/IMG-20260127-WA0000.jpg",
-    "images": [
-      "/images/products/IMG-20260127-WA0000.jpg"
-    ],
-    "premiumBoxes": [],
-    "description": "Celebrate your bond with this stunning OLEVS couple watch set, featuring matching designs for him and her. The luxurious silver and gold-tone stainless steel bracelets, elegant black dials, sparkling crystal markers, and classic Roman numerals create a sophisticated look for every occasion.",
-    "inStock": false,
-    "popupFeatured": false,
-    "previewOnly": false
-  },
-  {
-    "id": "GAL5687",
-    "name": "GALAXY TANK -GOLD",
-    "brand": "Chronova",
-    "category": "Classic",
-    "price": 799.0,
-    "compareAt": 1050.0,
-    "badge": null,
-    "tone": "#000000",
-    "dial": "#000000",
-    "movement": "QUARTZ",
-    "case": "STEEL",
-    "strap": "FIBER",
-    "image": "/images/products/IMG_20261023_174125.jpg",
-    "images": [
-      "/images/products/IMG_20261023_174125.jpg",
-      "/images/products/IMG_20261023_174144.jpg",
-      "/images/products/IMG_20261023_174233.jpg"
-    ],
-    "premiumBoxes": [],
-    "description": "Galaxy Watch \r\nThe Galaxy watch is a small, elegant piece that adds a touch of sparkle to any outfit. Its compact 28 mm dial sits neatly on the wrist, and the soft fiber and silicone strap with a magnetic butterfly lock makes it comfortable to wear and quick to put on and take off.\r\n\r\nSpecifications\r\n\r\nModel: Galaxy\r\nDial Size: 28 mm\r\nStrap Width: 18 mm\r\nStrap Build: Fiber and silicone\r\nLock Type: Magnetic butterfly lock",
-    "inStock": false,
-    "popupFeatured": false,
-    "previewOnly": false
-  },
-  {
     "id": "HUB0065",
     "name": "HUBLOT SKELETON-DESSERT",
     "brand": "Chronova",
@@ -148,31 +100,6 @@
     "previewOnly": false
   },
   {
-    "id": "HUB0067",
-    "name": "HUBLOT DUO",
-    "brand": "Chronova",
-    "category": "Classic",
-    "price": 999.0,
-    "compareAt": 1180.0,
-    "badge": "FEATURED",
-    "tone": "#000000",
-    "dial": "#000000",
-    "movement": "QUARTZ",
-    "case": "NORMAL",
-    "strap": "STEEL",
-    "image": "/images/products/hublot_silver_hero.jpg",
-    "images": [
-      "/images/products/hublot_silver_hero.jpg",
-      "/images/products/45.jpeg",
-      "/images/products/2.jpeg"
-    ],
-    "premiumBoxes": [],
-    "description": "Faceted geometric bezel with exposed screws and a spider-web style skeleton/open-worked dial featuring the Hublot brand mark.\r\nStrap/Chain: Integrated stainless steel link bracelet.\r\nCOLOR: Grey",
-    "inStock": false,
-    "popupFeatured": false,
-    "previewOnly": false
-  },
-  {
     "id": "HUB5985",
     "name": "HUBLOT SKELETON-MATE BLACK",
     "brand": "Chronova",
@@ -185,11 +112,11 @@
     "movement": "AUTOMATIC",
     "case": "STEEL",
     "strap": "LEATHER & SILICON",
-    "image": "/images/products/IMG_20261023_1759591.jpg",
+    "image": "/images/products/IMG_39791.JPG",
     "images": [
-      "/images/products/IMG_20261023_1759591.jpg",
-      "/images/products/IMG_20261023_1804191.jpg",
-      "/images/products/IMG_20261023_1800201.jpg"
+      "/images/products/IMG_39791.JPG",
+      "/images/products/IMG_39821.JPG",
+      "/images/products/IMG_39801.JPG"
     ],
     "premiumBoxes": [],
     "description": "Hublot Skeleton Watch\r\n\r\nThe Hublot Skeleton is made for people who love seeing how a watch works. Its open skeleton dial shows the movement inside, and the automatic movement is powered by the motion of your wrist, so there is no battery to replace. The 38 mm dial is a balanced size, and the leather and silicone strap makes it comfortable to wear all day.\r\n\r\nSpecifications\r\n\r\nModel: Hublot Skeleton\r\nDial Size: 38 mm\r\nMovement: Automatic\r\nStrap Build: Leather and silicone",
@@ -248,30 +175,6 @@
     "previewOnly": false
   },
   {
-    "id": "POY3456",
-    "name": "POEDAGAR 930 - ROYAL BLUE",
-    "brand": "Chronova",
-    "category": "Everyday",
-    "price": 600.0,
-    "compareAt": 750.0,
-    "badge": "PRESTIGIOUS",
-    "tone": "#000000",
-    "dial": "#000000",
-    "movement": "QUARTZ",
-    "case": "STEEL",
-    "strap": "STAINLESS STEEL",
-    "image": "/images/products/IMG-20261023-WA0046.jpg",
-    "images": [
-      "/images/products/IMG-20261023-WA0046.jpg",
-      "/images/products/IMG_20260227_120244.jpg"
-    ],
-    "premiumBoxes": [],
-    "description": "The Poedagar watch pairs a bold 38 mm dial with a sturdy metal chain bracelet, giving it a strong, polished look. The butterfly lock keeps it secure on the wrist and makes it easy to put on and take off, whether you’re heading to work or going out for the evening.\r\n\r\nSpecifications\r\n\r\nBrand: Poedagar\r\nDial Size: 38 mm\r\nChain/Bracelet Width: 22 mm\r\nClasp/Lock Width: 20 mm\r\nLock Type: Butterfly lock",
-    "inStock": false,
-    "popupFeatured": false,
-    "previewOnly": false
-  },
-  {
     "id": "POY3457",
     "name": "POEDAGAR 930 -  WHITE",
     "brand": "Chronova",
@@ -308,11 +211,11 @@
     "movement": "QUARTZ",
     "case": "STAINLESS STEEL",
     "strap": "LEATHER",
-    "image": "/images/products/IMG_20261107_1927551.jpg",
+    "image": "/images/products/IMG_20261112_2139401.jpg",
     "images": [
-      "/images/products/IMG_20261107_1927551.jpg",
-      "/images/products/IMG-20261107-WA00491.jpg",
-      "/images/products/IMG-20261107-WA00421.jpg"
+      "/images/products/IMG_20261112_2139401.jpg",
+      "/images/products/IMG-20261107-WA00421.jpg",
+      "/images/products/IMG_20261112_2140181.jpg"
     ],
     "premiumBoxes": [
       {
@@ -372,7 +275,7 @@
   },
   {
     "id": "ROL112",
-    "name": "YATCH MASTER COCACOLA",
+    "name": "GMT COCACOLA",
     "brand": "Chronova",
     "category": "Classic",
     "price": 2000.0,
@@ -534,9 +437,9 @@
     "movement": "AUTOMATIC",
     "case": "STAINLESS STEEL",
     "strap": "STAINLESS STEEL",
-    "image": "/images/products/IMG_20261107_1934511.jpg",
+    "image": "/images/products/IMG_39561.JPG",
     "images": [
-      "/images/products/IMG_20261107_1934511.jpg",
+      "/images/products/IMG_39561.JPG",
       "/images/products/IMG-20261107-WA01131.jpg",
       "/images/products/IMG-20261107-WA01291.jpg",
       "/images/products/IMG-20261107-WA00791.jpg"
@@ -564,7 +467,8 @@
     "images": [
       "/images/products/IMG_20261107_1858231.jpg",
       "/images/products/IMG-20261107-WA01911.jpg",
-      "/images/products/IMG-20261107-WA00661.jpg"
+      "/images/products/IMG_39751.JPG",
+      "/images/products/IMG_39731.JPG"
     ],
     "premiumBoxes": [
       {
@@ -598,12 +502,12 @@
     "movement": "AUTOMATIC",
     "case": "STAINLESS STEEL",
     "strap": "STAINLESS STEEL",
-    "image": "/images/products/IMG-20261107-WA00112.jpg",
+    "image": "/images/products/IMG_39461.JPG",
     "images": [
-      "/images/products/IMG-20261107-WA00112.jpg",
-      "/images/products/IMG_20261107_1907171.jpg",
+      "/images/products/IMG_39461.JPG",
       "/images/products/IMG_20261107_1907501.jpg",
-      "/images/products/IMG_20261107_1909471.jpg"
+      "/images/products/IMG_20261107_1909471.jpg",
+      "/images/products/IMG_39441.JPG"
     ],
     "premiumBoxes": [],
     "description": "Seiko Automatic Open Heart – Red Velvet Edition\r\n\r\nMake a bold impression with the Seiko Automatic Open Heart Red Velvet Edition. Featuring a stunning red velvet-inspired dial with an open-heart design, this timepiece offers a captivating glimpse of its mechanical movement. Its elegant detailing and distinctive appearance make it a perfect choice for those who appreciate timeless craftsmanship and sophisticated style.\r\n\r\nMovement: Automatic Mechanical\r\nDial: Red Velvet\r\nDesign: Open Heart\r\nStyle: Luxury | Classic | Elegant",
