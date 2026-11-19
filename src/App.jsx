@@ -62,6 +62,7 @@ import {
 import { isSEOProduct, usePageSEO } from "./lib/seo";
 import { trackMetaEvent, trackMetaPageView } from "./lib/metaPixel";
 import MarketingConsent from "./components/MarketingConsent";
+import OptimizedImage, { optimizedImageUrl } from "./components/OptimizedImage";
 
 const Store = createContext(null);
 const useStore = () => useContext(Store);
@@ -86,10 +87,15 @@ const write = (key, val) => {
 function WatchArt({ product, large = false }) {
   if (product?.image)
     return (
-      <img
+      <OptimizedImage
         className={`watch-art ${large ? "watch-art-large" : ""}`}
         src={product.image}
         alt={`${product.name} product photo`}
+        sizes={
+          large
+            ? "(max-width: 760px) 100vw, 55vw"
+            : "(max-width: 760px) 50vw, 25vw"
+        }
       />
     );
   const label = product?.name
@@ -558,9 +564,7 @@ function Footer() {
   const facebook =
     import.meta.env.VITE_FACEBOOK_URL ||
     "https://www.facebook.com/share/19eC6JhkrP/";
-  const instagram =
-    import.meta.env.VITE_INSTAGRAM_URL ||
-    "https://www.instagram.com/chronovabd_/";
+  const instagram = import.meta.env.VITE_INSTAGRAM_URL || "";
   const whatsapp = toWhatsAppUrl(
     import.meta.env.VITE_WHATSAPP_URL || "+880 1410-604446",
   );
@@ -863,12 +867,13 @@ function HeroCarousel() {
         aria-label={`Featured collection ${active + 1} of ${heroSlides.length}`}
       >
         {slide.src ? (
-          <img
+          <OptimizedImage
             className="hero-slide-image is-active"
             src={slide.src}
             alt={slide.imageAlt || slide.title}
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
+            sizes="(max-width: 760px) 100vw, 60vw"
           />
         ) : (
           <div className="hero-placeholder-art" aria-hidden="true">
@@ -1455,10 +1460,12 @@ function ProductGallery({ product }) {
                   <ArrowLeft size={22} />
                 </button>
               )}
-              <img
+              <OptimizedImage
                 className="gallery-lightbox-image"
                 src={images[active]}
                 alt={`${product.name} view ${active + 1}`}
+                loading="eager"
+                sizes="(max-width: 760px) 94vw, 820px"
               />
               {images.length > 1 && (
                 <button
@@ -1487,15 +1494,19 @@ function ProductGallery({ product }) {
             <button
               type="button"
               className="gallery-main-button"
-              style={{ "--gallery-backdrop": `url(\"${images[active]}\")` }}
+              style={{
+                "--gallery-backdrop": `url(\"${optimizedImageUrl(images[active])}\")`,
+              }}
               onClick={() => setLightbox(true)}
               aria-label="Open product image viewer"
             >
-              <img
+              <OptimizedImage
                 key={images[active]}
                 className="gallery-main-image"
                 src={images[active]}
                 alt={`${product.name} view ${active + 1}`}
+                loading="eager"
+                sizes="(max-width: 760px) 100vw, 55vw"
               />
               <span className="gallery-zoom-hint">View larger</span>
             </button>
@@ -1519,7 +1530,7 @@ function ProductGallery({ product }) {
                 aria-label={`Show product image ${index + 1}`}
                 aria-current={index === active ? "true" : undefined}
               >
-                <img src={src} alt="" />
+                <OptimizedImage src={src} alt="" sizes="70px" />
               </button>
             ))}
           </div>
@@ -1620,10 +1631,12 @@ function PremiumBoxShowcase({ product }) {
                   <ArrowLeft size={22} />
                 </button>
               )}
-              <img
+              <OptimizedImage
                 className="gallery-lightbox-image"
                 src={viewerSlides[viewerIndex]?.src}
                 alt={`${viewerSlides[viewerIndex]?.box.name || "Premium gift box"} image ${viewerIndex + 1}`}
+                loading="eager"
+                sizes="(max-width: 760px) 94vw, 820px"
               />
               {viewerSlides.length > 1 && (
                 <button
@@ -1664,9 +1677,10 @@ function PremiumBoxShowcase({ product }) {
                   aria-label={`View ${slide.box.name} image larger`}
                   tabIndex={index === active ? 0 : -1}
                 >
-                  <img
+                  <OptimizedImage
                     src={slide.src}
                     alt={`${slide.box.name} premium gift box`}
+                    sizes="(max-width: 760px) 50vw, 350px"
                   />
                   <span className="gallery-zoom-hint">View larger</span>
                 </button>
@@ -2016,9 +2030,10 @@ function CartPage() {
                           <div className="premium-box-line">
                             <div className="premium-box-line-photo">
                               {selectedBox.images?.[0] ? (
-                                <img
+                                <OptimizedImage
                                   src={selectedBox.images[0]}
                                   alt={selectedBox.name}
+                                  sizes="90px"
                                 />
                               ) : (
                                 <span>
